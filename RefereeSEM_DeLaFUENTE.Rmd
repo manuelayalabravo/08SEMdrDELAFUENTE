@@ -1,0 +1,117 @@
+---
+title: "refereeSEM_DELAFUENTE"
+author: "Manuel Ayala"
+#csl: nature.csl
+date: "today"
+output: 
+  pdf_document: 
+    keep_tex: yes
+    latex_engine: xelatex
+header-includes: \usepackage{pgf,tikz}
+lang: en-GB
+description: References for research project on NGOs and Social Investment
+subtitle: '**Network Design Problems with traffic Capture**'
+bibliography: references.bib
+
+---
+
+```{r global_options, echo=FALSE}
+knitr::opts_chunk$set(fig.path="Figs/", message=FALSE, warning=FALSE,
+                      echo=FALSE, results="hide", fig.width=11)
+```
+
+
+## Descripción del trabajo presentado
+
+
+## Análisis de la literatura relacionada
+
+[@delafuente-mellaEconometricModelingTime2018; @silvapalavecinosAnalisisRevelacionInformacion2016]
+
+## Descripción del marco conceptual
+
+
+## Diagrams
+\tikzset{every picture/.style={line width=0.75pt}} 
+%set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Axis 2D [id:dp19527234072026634] 
+\draw  (151.2,238.94) -- (430.21,238.65)(178.8,44.76) -- (179.14,260.49) (423.2,233.66) -- (430.21,238.65) -- (423.22,243.66) (173.81,51.77) -- (178.8,44.76) -- (183.81,51.76)  ;
+%Shape: Free Drawing [id:dp21753955847160644] 
+\draw  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=3] [line join = round][line cap = round] (184.26,189.14) .. controls (195.59,189.14) and (220.51,170.8) .. (230.53,165.35) .. controls (265.53,146.32) and (302.69,130.86) .. (339.6,114.92) .. controls (354.06,108.67) and (369.1,103.88) .. (382.56,95.89) .. controls (383.34,95.42) and (389.17,91.84) .. (389.17,91.13) ;
+%Shape: Free Drawing [id:dp6240527636898042] 
+\draw  [color={rgb, 255:red, 74; green, 144; blue, 226 }  ,draw opacity=1 ][line width=3] [line join = round][line cap = round] (174.34,96.84) .. controls (176.08,96.84) and (192.37,105.2) .. (196.37,106.35) .. controls (237.24,118.12) and (274.62,142.01) .. (313.16,162.5) .. controls (326.67,169.68) and (345.47,171.44) .. (359.43,178.68) .. controls (365.37,181.76) and (369.33,186.11) .. (374.85,189.14) .. controls (387.3,195.98) and (395.57,198.47) .. (405.7,207.23) ;
+%Shape: Boxed Line [id:dp9017109815625127] 
+\draw [color={rgb, 255:red, 208; green, 2; blue, 27 }  ,draw opacity=1 ]   (178.61,143) -- (316,141.56) ;
+%Straight Lines [id:da5408328549080522] 
+\draw    (165,114) -- (395.78,112.06) ;
+%Straight Lines [id:da09197087660853087] 
+\draw    (166,176) -- (398.03,174.8) ;
+%Shape: Brace [id:dp7372954089935925] 
+\draw   (415.16,175.98) .. controls (419.83,175.91) and (422.13,173.55) .. (422.06,168.88) -- (421.79,150.42) .. controls (421.69,143.75) and (423.97,140.39) .. (428.64,140.32) .. controls (423.97,140.39) and (421.59,137.09) .. (421.5,130.42)(421.54,133.42) -- (421.27,114.32) .. controls (421.2,109.65) and (418.83,107.35) .. (414.16,107.42) ;
+
+
+% Text Node
+\draw (433.47,130.38) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontsize{0.67em}{0.8em}\selectfont \textbf{Spread \ BID-ASK}}};
+% Text Node
+\draw (122,104) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\tiny Precio ASK}};
+% Text Node
+\draw (123,164) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\tiny Precio BID}};
+% Text Node
+\draw (321,131) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\tiny PRECIO EQUILIBRIO}};
+% Text Node
+\draw (398,77) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\tiny OFERTA}};
+% Text Node
+\draw (407,202) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\tiny DEMANDA}};
+
+
+\end{tikzpicture}
+
+
+
+## Análisis de la contribución del trabajo presentado
+
+
+## Comentario adicional
+
+
+
+
+#bibliometrix
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(bibliometrix)   
+file <- "https://www.bibliometrix.org/datasets/savedrecsDLF.txt"
+M <- convert2df(file, dbsource = "wos", format = "plaintext")
+head(M["TC"])
+results <- biblioAnalysis(M, sep = ";")
+
+```
+
+```{r message=FALSE, warning=FALSE}
+plot(x = results, k = 10, pause = FALSE)
+```
+
+
+
+```{r}
+topAU <- authorProdOverTime(M, k = 10, graph = TRUE)
+```
+
+
+```{r}
+NetMatrix <- biblioNetwork(M, analysis = "co-occurrences", network = "keywords", sep = ";")
+# Plot the network
+net=networkPlot(NetMatrix, n = dim(NetMatrix)[1], Title = "Keywords Co-Ocurrences", type = "circle", size=TRUE, remove.multiple=FALSE,labelsize=0.7,cluster="none")
+```
+
+## Bibliografía
+
+
+
+
+
+

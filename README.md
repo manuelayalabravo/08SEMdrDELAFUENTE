@@ -26,4 +26,4 @@ plot(x = results, k = 10, pause = FALSE)
 ```{r}
 topAU <- authorProdOverTime(M, k = 10, graph = TRUE)
 ```
-
+archivo de trabajo: RefereeSEM_DeLaFUENTE.Rmd
