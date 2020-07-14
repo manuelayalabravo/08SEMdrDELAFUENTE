@@ -3,7 +3,7 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
-  british,
+  american,
 ]{article}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
@@ -39,7 +39,7 @@
 \hypersetup{
   pdftitle={refereeSEM\_DELAFUENTE},
   pdfauthor={Manuel Ayala},
-  pdflang={en-GB},
+  pdflang={en-US},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -65,16 +65,12 @@
 \ifxetex
   % Load polyglossia as late as possible: uses bidi with RTL langages (e.g. Hebrew, Arabic)
   \usepackage{polyglossia}
-  \setmainlanguage[variant=british]{english}
+  \setmainlanguage[variant=american]{english}
 \else
-  \usepackage[shorthands=off,main=british]{babel}
+  \usepackage[shorthands=off,main=american]{babel}
 \fi
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newenvironment{cslreferences}%
-  {\setlength{\parindent}{0pt}%
-  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces}%
-  {\par}
+\usepackage[]{biblatex}
+\addbibresource{./references.bib}
 
 \title{refereeSEM\_DELAFUENTE}
 \usepackage{etoolbox}
@@ -85,7 +81,7 @@
 \makeatother
 \subtitle{\textbf{Network Design Problems with traffic Capture}}
 \author{Manuel Ayala}
-\date{today}
+\date{14 julio 2020}
 
 \begin{document}
 \maketitle
@@ -94,12 +90,46 @@
 \subsection{Descripción del trabajo
 presentado}\label{descripciuxf3n-del-trabajo-presentado}}
 
+El seminario realizado por el Dr.~De La Fuente presentó modelos
+econométricos con carácter social. El desarrollo de la exposición
+consideró tres casos de estudios definidos como:
+
+\begin{itemize}
+\tightlist
+\item
+  Caso 1 Analysis of the factor of Chilean city hall using econometric
+  modeling and stochastic frontier.
+\end{itemize}
+
+Considerando el índice de calidad de vida \((QoL)\) sectorizado por
+comunas de Chile, publicado por la PUC en el año 2018, el cual
+consideraba variables cualitativas y cuantitativas de la calidad como
+conectividad, habitabilidad, salud, condiciones sociocultirales y otras,
+se desarrollo estudio que buscaba determinar el grado de influencia real
+de la calidad de vida por comuna y estimar la eficiencia de las
+municipalidades a partir de los indicadores de calidad de vida como una
+calificación de vida urbana. Esto se relizó basado en estadísticas
+descriptivas y el modelo de regresión \emph{stepwise}, análisis de
+cluster y stochastic frontier model
+
+Cruzando información de bases de datos existentes se determinó por la
+utilización de bases de información cuantitativa y también cualitativa,
+que buscaba al encasillar estos modelos en términos sociales los
+aterriza en la civilidad y en la
+
 \hypertarget{anuxe1lisis-de-la-literatura-relacionada}{%
 \subsection{Análisis de la literatura
 relacionada}\label{anuxe1lisis-de-la-literatura-relacionada}}
 
-(de la Fuente-Mella, Campos-Espinoza, and Far\a'ıas 2018; Silva
-Palavecinos et al. 2016)
+\includegraphics{Figs/unnamed-chunk-2-1.pdf}
+\includegraphics{Figs/unnamed-chunk-2-2.pdf}
+\includegraphics{Figs/unnamed-chunk-2-3.pdf}
+\includegraphics{Figs/unnamed-chunk-2-4.pdf}
+\includegraphics{Figs/unnamed-chunk-2-5.pdf}
+
+\includegraphics{Figs/unnamed-chunk-3-1.pdf}
+
+\includegraphics{Figs/unnamed-chunk-4-1.pdf}
 
 \hypertarget{descripciuxf3n-del-marco-conceptual}{%
 \subsection{Descripción del marco
@@ -155,27 +185,8 @@ presentado}\label{anuxe1lisis-de-la-contribuciuxf3n-del-trabajo-presentado}}
 \subsection{Comentario adicional}\label{comentario-adicional}}
 
 \hypertarget{bibliografuxeda}{%
-\subsection*{Bibliografía}\label{bibliografuxeda}}
-\addcontentsline{toc}{subsection}{Bibliografía}
+\subsection{Bibliografía}\label{bibliografuxeda}}
 
-\hypertarget{refs}{}
-\begin{cslreferences}
-\leavevmode\hypertarget{ref-delafuente-mellaEconometricModelingTime2018}{}%
-de la Fuente-Mella, Hanns, Ricardo Campos-Espinoza, and Gonzalo
-Far\a'ıas. 2018. `Econometric Modeling of Time Series Bid-Ask (Spread)
-for a Sample of Chilean Companies'. In \emph{Advances in Human Factors,
-Business Management and Leadership}, edited by Jussi Ilari Kantola,
-Tibor Barath, and Salman Nazir, 241--46. Advances in Intelligent Systems
-and Computing. Cham: Springer International Publishing.
-\url{https://doi.org/10.1007/978-3-319-60372-8_23}.
-
-\leavevmode\hypertarget{ref-silvapalavecinosAnalisisRevelacionInformacion2016}{}%
-Silva Palavecinos, Berta, Ricardo Campos Espinoza, Hanns de la Fuente
-Mella, and David Cademartori Rosso. 2016. `Análisis de Revelación de La
-Información Para El Caso Chileno Usando La Metodología de
-Correspondencias Múltiples'. \emph{Ingeniare. Revista Chilena de
-Ingeniería} 24 (2): 327--36.
-\url{https://doi.org/10.4067/S0718-33052016000200014}.
-\end{cslreferences}
+\printbibliography
 
 \end{document}

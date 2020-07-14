@@ -1,18 +1,18 @@
 ---
 title: "refereeSEM_DELAFUENTE"
 author: "Manuel Ayala"
-#csl: nature.csl
-date: "today"
+date: "14 julio 2020"
 output: 
   pdf_document: 
     keep_tex: yes
-    latex_engine: xelatex
+    latex_engine: xelatex  
+    citation_package: biblatex
 header-includes: \usepackage{pgf,tikz}
-lang: en-GB
+lang: en-US
 description: References for research project on NGOs and Social Investment
 subtitle: '**Network Design Problems with traffic Capture**'
-bibliography: references.bib
-
+bibliography: ./references.bib
+csl: Data_Science_Journal.csl
 ---
 
 ```{r global_options, echo=FALSE}
@@ -23,10 +23,45 @@ knitr::opts_chunk$set(fig.path="Figs/", message=FALSE, warning=FALSE,
 
 ## Descripción del trabajo presentado
 
+El seminario realizado por el Dr. De La Fuente presentó modelos econométricos con carácter social. El desarrollo de la exposición consideró tres casos de estudios definidos como:
+
+* Caso 1 Analysis of the factor of Chilean city hall using econometric modeling and stochastic frontier.
+
+Considerando el índice de calidad de vida $(QoL)$ sectorizado por comunas de Chile, publicado por la PUC en el año 2018, el cual consideraba variables cualitativas y cuantitativas de la calidad como conectividad, habitabilidad, salud, condiciones sociocultirales y otras, se desarrollo estudio que buscaba determinar el grado de influencia real de la calidad de vida por comuna y estimar la eficiencia de las municipalidades a partir de los indicadores de calidad de vida como una calificación de vida urbana. Esto se relizó basado en estadísticas descriptivas y el modelo de regresión *stepwise*, análisis  de cluster y stochastic frontier model 
+
+
+Cruzando información de bases de datos existentes se determinó 
+por la utilización de bases  de información cuantitativa y también cualitativa, que buscaba al encasillar estos modelos en términos sociales los aterriza en la civilidad y en la 
+
 
 ## Análisis de la literatura relacionada
 
-[@delafuente-mellaEconometricModelingTime2018; @silvapalavecinosAnalisisRevelacionInformacion2016]
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(bibliometrix)   
+file <- "savedrecsDLF.txt"
+M <- convert2df(file, dbsource = "wos", format = "plaintext")
+head(M["TC"])
+results <- biblioAnalysis(M, sep = ";")
+```
+
+```{r message=FALSE, warning=FALSE}
+plot(x = results, k = 10, pause = FALSE)
+```
+
+
+
+```{r}
+topAU <- authorProdOverTime(M, k = 10, graph = TRUE)
+```
+
+
+```{r}
+NetMatrix <- biblioNetwork(M, analysis = "co-occurrences", network = "keywords", sep = ";")
+# Plot the network
+net=networkPlot(NetMatrix, n = dim(NetMatrix)[1], Title = "Keywords Co-Ocurrences", type = "circle", size=TRUE, remove.multiple=FALSE,labelsize=0.7,cluster="none")
+```
+
 
 ## Descripción del marco conceptual
 
@@ -77,36 +112,6 @@ knitr::opts_chunk$set(fig.path="Figs/", message=FALSE, warning=FALSE,
 
 ## Comentario adicional
 
-
-
-
-#bibliometrix
-
-```{r message=FALSE, warning=FALSE, include=FALSE}
-library(bibliometrix)   
-file <- "https://www.bibliometrix.org/datasets/savedrecsDLF.txt"
-M <- convert2df(file, dbsource = "wos", format = "plaintext")
-head(M["TC"])
-results <- biblioAnalysis(M, sep = ";")
-
-```
-
-```{r message=FALSE, warning=FALSE}
-plot(x = results, k = 10, pause = FALSE)
-```
-
-
-
-```{r}
-topAU <- authorProdOverTime(M, k = 10, graph = TRUE)
-```
-
-
-```{r}
-NetMatrix <- biblioNetwork(M, analysis = "co-occurrences", network = "keywords", sep = ";")
-# Plot the network
-net=networkPlot(NetMatrix, n = dim(NetMatrix)[1], Title = "Keywords Co-Ocurrences", type = "circle", size=TRUE, remove.multiple=FALSE,labelsize=0.7,cluster="none")
-```
 
 ## Bibliografía
 

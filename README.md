@@ -27,3 +27,16 @@ plot(x = results, k = 10, pause = FALSE)
 topAU <- authorProdOverTime(M, k = 10, graph = TRUE)
 ```
 archivo de trabajo: RefereeSEM_DeLaFUENTE.Rmd
+
+
+Profesor Sr. Sebastián Cea corrige error del codigo para insertar análisis de bibliografía desde la Web of Science. corregido
+
+se corrige ingreso de cite style languaje csl. corregido ingresando el código:
+
+output: 
+  pdf_document: 
+    keep_tex: yes
+    latex_engine: xelatex  
+    citation_package: biblatex
+    
+Queda funcionando archivo +.Rmd
