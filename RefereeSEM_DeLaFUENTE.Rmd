@@ -84,7 +84,7 @@ knitr::opts_chunk$set(fig.path="Figs/", message=FALSE, warning=FALSE,
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 library(bibliometrix)   
-file <- "https://www.bibliometrix.org/datasets/savedrecsDLF.txt"
+file <- "savedrecsDLF.txt"
 M <- convert2df(file, dbsource = "wos", format = "plaintext")
 head(M["TC"])
 results <- biblioAnalysis(M, sep = ";")
