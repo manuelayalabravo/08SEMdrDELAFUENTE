@@ -39,4 +39,19 @@ output:
     latex_engine: xelatex  
     citation_package: biblatex
     
-Queda funcionando archivo +.Rmd
+Queda funcionando archivo +.Rmd. se termina edición de informe tipo referee del seminario Dr. De La Fuente.
+
+se consideran las siguientes competencias adquiridas
+redacción en rmarkdown
+redacción en LaTex overleaf 
+inclusión de referencias +.bib
+utilización de Zotero
+estilo de citas csl
+inclusión de diagramas TIKZ
+utilización de CITR
+utilización de Web of Science
+extracción de datos desde la Web of Science en plaintext y BibTex
+uso de bibliometrix web
+uso de bibliometrix en archivo *.Rmd
+escritura de formulas en LaTex
+
