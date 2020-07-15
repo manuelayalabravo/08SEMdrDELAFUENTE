@@ -53,5 +53,5 @@ utilización de Web of Science
 extracción de datos desde la Web of Science en plaintext y BibTex
 uso de bibliometrix web
 uso de bibliometrix en archivo *.Rmd
-escritura de formulas en LaTex.
+escritura de formulas en LaTex
 
