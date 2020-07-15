@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.13)  13 JUL 2020 23:24
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.13)  14 JUL 2020 23:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1032,9 +1032,9 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./RefereeSEM_DeLaFUENTE.aux
 Package polyglossia Info: Option: English, variant=american.
 Package polyglossia Info: Option: English, variant=american.
-LaTeX Info: Redefining \rmfamily on input line 23.
-LaTeX Info: Redefining \sffamily on input line 23.
-LaTeX Info: Redefining \ttfamily on input line 23.
+LaTeX Info: Redefining \rmfamily on input line 29.
+LaTeX Info: Redefining \sffamily on input line 29.
+LaTeX Info: Redefining \ttfamily on input line 29.
 )
 \openout1 = `RefereeSEM_DeLaFUENTE.aux'.
 
@@ -1464,6 +1464,9 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 6.99925pt on input line 104.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 104.
+[1
+
+]
 File: Figs/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 <use Figs/unnamed-chunk-2-1.pdf>
 File: Figs/unnamed-chunk-2-2.pdf Graphic file (type pdf)
@@ -1475,21 +1478,14 @@ File: Figs/unnamed-chunk-2-4.pdf Graphic file (type pdf)
 File: Figs/unnamed-chunk-2-5.pdf Graphic file (type pdf)
 <use Figs/unnamed-chunk-2-5.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--129
+Underfull \hbox (badness 10000) in paragraph at lines 175--180
 []
  []
 
-[1
-
-] [2]
+[2]
 File: Figs/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 <use Figs/unnamed-chunk-3-1.pdf>
-File: Figs/unnamed-chunk-4-1.pdf Graphic file (type pdf)
-<use Figs/unnamed-chunk-4-1.pdf>
-[3]
-
-LaTeX Warning: Empty bibliography on input line 190.
-
+[3] [4] [5]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1524,32 +1520,38 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
+[6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
 (./RefereeSEM_DeLaFUENTE.aux
 Package polyglossia Info: Option: English, variant=american.
 Package polyglossia Info: Option: English, variant=american.
-LaTeX Info: Redefining \rmfamily on input line 23.
-LaTeX Info: Redefining \sffamily on input line 23.
-LaTeX Info: Redefining \ttfamily on input line 23.
+LaTeX Info: Redefining \rmfamily on input line 29.
+LaTeX Info: Redefining \sffamily on input line 29.
+LaTeX Info: Redefining \ttfamily on input line 29.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 192.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 325.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
 Package rerunfilecheck Info: File `RefereeSEM_DeLaFUENTE.out' has not changed.
-(rerunfilecheck)             Checksum: 9CB7DA703FAE3AF8DA9C9B81014DBD7D;1342.
+(rerunfilecheck)             Checksum: 60D0CC79698FE121B16B1006E1C68F3A;1258.
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+
 Package logreq Info: Writing requests to 'RefereeSEM_DeLaFUENTE.run.xml'.
 \openout1 = `RefereeSEM_DeLaFUENTE.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 325.
  ) 
 Here is how much of TeX's memory you used:
- 34329 strings out of 481269
- 677029 string characters out of 5921113
- 1444373 words of memory out of 5000000
- 51344 multiletter control sequences out of 15000+600000
- 538757 words of font info for 73 fonts, out of 8000000 for 9000
+ 34570 strings out of 481269
+ 682378 string characters out of 5921113
+ 1450477 words of memory out of 5000000
+ 51581 multiletter control sequences out of 15000+600000
+ 538789 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 53i,6n,118p,973b,3939s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,6n,118p,1592b,5017s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on RefereeSEM_DeLaFUENTE.pdf (4 pages).
+Output written on RefereeSEM_DeLaFUENTE.pdf (6 pages).

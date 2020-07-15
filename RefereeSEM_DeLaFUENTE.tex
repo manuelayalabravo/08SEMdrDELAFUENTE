@@ -37,7 +37,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={refereeSEM\_DELAFUENTE},
+  pdftitle={Informe de seminario 8},
   pdfauthor={Manuel Ayala},
   pdflang={en-US},
   hidelinks,
@@ -72,14 +72,14 @@
 \usepackage[]{biblatex}
 \addbibresource{./references.bib}
 
-\title{refereeSEM\_DELAFUENTE}
+\title{Informe de seminario 8}
 \usepackage{etoolbox}
 \makeatletter
 \providecommand{\subtitle}[1]{% add subtitle to \maketitle
   \apptocmd{\@title}{\par {\large #1 \par}}{}{}
 }
 \makeatother
-\subtitle{\textbf{Network Design Problems with traffic Capture}}
+\subtitle{\textbf{Econometric Modeling and Solving Social Problems}}
 \author{Manuel Ayala}
 \date{14 julio 2020}
 
@@ -110,16 +110,67 @@ de la calidad de vida por comuna y estimar la eficiencia de las
 municipalidades a partir de los indicadores de calidad de vida como una
 calificación de vida urbana. Esto se relizó basado en estadísticas
 descriptivas y el modelo de regresión \emph{stepwise}, análisis de
-cluster y stochastic frontier model
+cluster y modelos estocásticos de frontera \emph{Cobb Douglas y
+Translogarithmic}. el resultado del modelo y el índice de eficiencia
+llevo a determinar que la comuna con mayor índice de eficiencia en Chile
+es Punta Arenas \autocite{hanns_de_la_fuente-mella_econometric_2020}.
 
-Cruzando información de bases de datos existentes se determinó por la
-utilización de bases de información cuantitativa y también cualitativa,
-que buscaba al encasillar estos modelos en términos sociales los
-aterriza en la civilidad y en la
+\begin{itemize}
+\tightlist
+\item
+  Caso 2 Forecasting performance measure for traffic safety using
+  deterministic and stochastic models.
+\end{itemize}
+
+A partir de la ley Moving Ahead Progress in 21st Century (MAP21) en el
+estado de Nevada, USA . Se realizó estudio que consideró el conteo del
+tráfico vehicular, se generaron bases de datos y posterior modelado
+determinístico y estocástico \autocite{paz_forecasting_2015} para
+pronosticar el desempeño de seguridad de las Autopistas del Estado y
+llevar a 0 la posibilidad de muertes por accidentes de tránsito, reducir
+el número de accidentes graves. A partir de las bases de datos se
+realizarón varios modelos estadísticos determinísticos de predicción de
+accidentes, donde el modelo que mejor se ajustó fue el modelo
+\emph{Winter Additive}. luego, se realizó predicción de las variables a
+través de modelos estocásticos estacionarios ARIMA, llegando a la
+conclusión que con los datos existentes el mejor ajuste de las variales
+\emph{número de muertes y accidentes graves} se lograva con RMSE (error
+medio cuadrático) de 7.756 y 30.111 respectivamente
+\autocite{hanns_de_la_fuente-mella_econometric_2020}.
+
+\begin{itemize}
+\tightlist
+\item
+  Caso 3 Gobiernos corporativos y asimetrías de información.
+  Modelamiento econométrico del Spread (Bid-Ask) para una muestra de
+  Empresas Chilenas.
+\end{itemize}
+
+En los mercados de capitales el manejo de la información y la
+transparencia de esta genera asimetrías en las transacciones en
+correlación con el \emph{spread} generado en la tansacción. esta
+información manejada por los corredores de bolsa, hace que en ocaciones
+se desestabilice por completo el mercado accionario y se produzcan
+efectos que afectan a todo el sistema económico y social de una nación.
+se presentó modelo econométrico multivariante qeu determina el efecto de
+asimetrias de información asociado al tamaño del corredor y el spread
+generado en la transacción como también el efecto que se puede
+interpretar como una acción monopólica en el manejo del spread. Este
+modelo se genero a partir de información compartida por la bolsa de
+valores de Santiago.
 
 \hypertarget{anuxe1lisis-de-la-literatura-relacionada}{%
 \subsection{Análisis de la literatura
 relacionada}\label{anuxe1lisis-de-la-literatura-relacionada}}
+
+Luego de realizar búsqueda de literatura en la base artículos
+científicos Web of Science y utilizando la herramienta bibliometrix se
+obtuvieron estadísticos de la producción científica respecto al estudio
+presentado, la base de busqueda se basó utilizando las keywords:
+``econometric+model'', filtrado por la categoria social science
+mathematical method. La literatura relacionada encontrada de acuerdo a
+frase clave, mostró producción científica desde el año 1975, con
+producción de 314 artículos, y una cantidad aproximada de 800 autores.
 
 \includegraphics{Figs/unnamed-chunk-2-1.pdf}
 \includegraphics{Figs/unnamed-chunk-2-2.pdf}
@@ -129,18 +180,80 @@ relacionada}\label{anuxe1lisis-de-la-literatura-relacionada}}
 
 \includegraphics{Figs/unnamed-chunk-3-1.pdf}
 
-\includegraphics{Figs/unnamed-chunk-4-1.pdf}
+de los gráficos anteriores se destaca una mayor producción científica en
+Estados Unidos comparatiovamente con el resto del mundo, además, se
+verifica una producción científica en aumento de acuerdo a la cantidad
+de trabajos publicados.
 
 \hypertarget{descripciuxf3n-del-marco-conceptual}{%
 \subsection{Descripción del marco
 conceptual}\label{descripciuxf3n-del-marco-conceptual}}
 
-\hypertarget{diagrams}{%
-\subsection{Diagrams}\label{diagrams}}
+el trabajo del profesor De La Fuente y su caracter social de la
+investigación expuesta, esta basado en la rama de la economía donde su
+impacto de modelación afecta socialmente de forma directa como lo
+expuesto en el caso1, la eficiencia de las municipalidades o derivada
+del juego bursatil de la bolsa de valores del caso 3. Este modelado
+matemático de los sistemas económicos de un grupo de personas o paises,
+en diferentes actividades económicas con datos observados se identifica
+como econometría y se define como: El análisis cuantitativo de fenómenos
+económicos actuales, basado en el desarrollo congruente de teoría y
+observaciones, y relacionado por métodos apropiados de
+inferencia\autocite{samuelson_report_1954-1}.
+
+los modelos econométricos presentados se enmarcan en el análsis
+predictivo con técnicas estadísticas de modelación, donde basados en
+datos históricos no modelados de variables se infirieron acontecimientos
+futuros basados en el ajuste de algún modelo matemático.
+
+En el caso 1 presentado, se utilizaron en la metodología de modelado
+varias técnicas matemáticas como estadística descrptiva, ajuste por
+regresión stepwise, análisis de cluster y Stochastic Frontier Analysis
+con dos modelos:
+
+\begin{itemize}
+\item
+  \textbf{Cobb-Douglas} \[\ln q_{it}=X_{it}\beta +v_{it}-u_{it}\]
+\item
+  \textbf{Translogarithmic}
+  \[\ln q_{it}= \beta +\sum_{i=1}^n \beta \ln X_i+0.5\sum_{i=1}^n\sum_{j=1}^n \beta \ln X_i \ln X_j\]
+\end{itemize}
+
+En el caso 2 se utilizó como modelado de la serie al modelo ARIMA que es
+un modelo autorregresivo integrado de promedio móvil (acrónimo del
+inglés autoregressive integrated moving average).
+
+\autocite{casimiro_alisis_nodate}La construcción general de modelos
+ARIMA se lleva a cabo de forma iterativa mediante un proceso en el que
+se pueden distinguir cuatro etapas: a) Identificación. Utilizando los
+datos y/o cualquier tipo de información disponible sobre cómo ha sido
+generada la serie, se intenta sugerir una subclase de modelos
+ARIMA\((p, d, q)\) que merezca la pena ser investigada. El objetivo es
+determinar los órdenes \(p,d,q\) que parecen apropiados para reproducir
+las características de la serie bajo estudio y si se incluye o no la
+constante \(δ\). En esta etapa es posible identificar m ́as de un modelo
+candidato a haber podido generar la serie. b) Estimación. Usando de
+forma eficiente los datos se realiza inferencia sobre los parámetros
+condicionada a que el modelo investigado sea apropiado. Dado un
+determinado proceso propuesto, se trata de cuantificar los parámetros
+del mismo, \(θ1,...θq, φ1,...φp , σ2\) y, en su caso, \(δ\). c)
+Validación. Se realizan contrastes de diagnóstico para comprobar si el
+modelo se ajusta a los datos, o, si no es así, revelar las posibles
+discrepancias del modelo propuesto para poder mejorarlo. d) Predicción.
+Obtener pronósticos en términos probabilísticos de los valores futuros
+de la variable. En esta etapa se tratará también de evaluar la capacidad
+predictiva del modelo.
+
+El caso 3, basó su marco teórico en la asimetría de la información, la
+cual en el mercado accionario de divisas es medida a través del
+\emph{spread} del valor entre la compra y la venta de los precios
+accionarios. En un mercado plenamente activo se formaría naturalmente un
+precio de equilibrio entre la oferta y la demanda, cuando ello no ocurre
+surge el precio \emph{Bid} y el precio
+\emph{Ask}\autocite{hanns_de_la_fuente-mella_econometric_2020}, de
+acuerdo al siguiente diagrama:
 
 \tikzset{every picture/.style={line width=0.75pt}}
-
-\%set default line width to 0.75pt
 
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
@@ -181,8 +294,28 @@ conceptual}\label{descripciuxf3n-del-marco-conceptual}}
 \subsection{Análisis de la contribución del trabajo
 presentado}\label{anuxe1lisis-de-la-contribuciuxf3n-del-trabajo-presentado}}
 
+Los modelos econométricos presentados y su aplicabilidad civil y real
+son en el general de la exposición la mayor contribución del trabajo
+presentado, considerando que en todos los casos expuestos tienen como
+información basal a variables reales e históricas, utilizadas para
+predecir y en consecuencia a partir de estos datos históricos relizar el
+modelamiento predictivo, se considera como una segunda contribución de
+los trabajos, la componente social resultante derivada del modelamiento,
+ya que a partir de sus resultados de los modelos econométricos, se puede
+mejorar la calidad de vida, eficiencia del entorno donde se habita y las
+condiciones de vida de la sociedad.
+
 \hypertarget{comentario-adicional}{%
 \subsection{Comentario adicional}\label{comentario-adicional}}
+
+En general la aplición de esta rama de la economía condiciona el futuro
+de las sociedades, estas herramientas son utilizadas en la toma de
+deciciones transversales, estimando que estos modelos matemáticos son
+utilizados como instrumentos de decisión, apoyando a mejorar en todo
+ambito a las sociedades fundadas en las transaccines económicas. Se
+considera importante que los modelos sean alimentados de información
+histórica validada, correcta y actualizada, dada la dinámica no lineal
+de la realidad.
 
 \hypertarget{bibliografuxeda}{%
 \subsection{Bibliografía}\label{bibliografuxeda}}
