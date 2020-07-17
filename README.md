@@ -55,3 +55,6 @@ uso de bibliometrix web
 uso de bibliometrix en archivo *.Rmd
 escritura de formulas en LaTex.
 
+Se comparte repositorio de informe del profesor De La Fuente, soporte de competencias adquiridas
+
+
