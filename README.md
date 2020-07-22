@@ -57,4 +57,6 @@ escritura de formulas en LaTex.
 
 Se comparte repositorio de informe del profesor De La Fuente, soporte de competencias adquiridas
 
+Se agraga Imagen con referencia al uso de Zotero-BetterBIBTEX y CITR
+
 

@@ -4,9 +4,9 @@ author: "Manuel Ayala"
 date: "14 julio 2020"
 output: 
   pdf_document: 
-    keep_tex: yes
-    latex_engine: xelatex  
     citation_package: biblatex
+    keep_tex: yes
+    latex_engine: xelatex
 header-includes: \usepackage{pgf,tikz}
 lang: en-US
 description: References for research project on NGOs and Social Investment
